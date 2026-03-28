@@ -843,7 +843,7 @@ const CLOSE_SVG = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" s
 const TAG_SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4a2 2 0 012-2h5.586a2 2 0 011.414.586l9.414 9.414a2 2 0 010 2.828l-5.586 5.586a2 2 0 01-2.828 0L2.586 11A2 2 0 012 9.586V4zm4.5 3a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>`;
 const POPULAR_MINTS = [
     "So11111111111111111111111111111111111111112",
-    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "uSd2czE61Evaf76RNbq4KPpXnkiL3irdzgLFUMe3NoG",
 ];
 class ArgyrosSwapElement extends HTMLElement {
     static get observedAttributes() {

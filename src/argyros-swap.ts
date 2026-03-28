@@ -18,7 +18,7 @@ const TAG_SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4a2 2 
 
 const POPULAR_MINTS = [
   "So11111111111111111111111111111111111111112",
-  "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "uSd2czE61Evaf76RNbq4KPpXnkiL3irdzgLFUMe3NoG",
 ];
 
 export class ArgyrosSwapElement extends HTMLElement {
