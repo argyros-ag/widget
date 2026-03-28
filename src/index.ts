@@ -5,4 +5,4 @@ if (typeof customElements !== "undefined" && !customElements.get("argyros-swap")
 }
 
 export { ArgyrosSwapElement };
-export type { WidgetState, WidgetStatus } from "./state/store";
+export type { WidgetState, WidgetStatus, TokenInfo } from "./state/store";

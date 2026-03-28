@@ -1,5 +1,13 @@
 import type { QuoteResponse } from "@argyros/sdk";
 export type WidgetStatus = "idle" | "quoting" | "swapping" | "success" | "error";
+export interface TokenInfo {
+    mint: string;
+    symbol: string;
+    name: string;
+    decimals: number;
+    logoURI: string;
+}
+export type SelectorTarget = "input" | "output" | null;
 export interface WidgetState {
     inputMint: string;
     outputMint: string;
@@ -10,6 +18,18 @@ export interface WidgetState {
     status: WidgetStatus;
     error: string;
     walletAddress: string;
+    inputBalance: string;
+    outputBalance: string;
+    inputDecimals: number;
+    outputDecimals: number;
+    tokenMap: Map<string, TokenInfo>;
+    allBalances: Map<string, {
+        amount: string;
+        decimals: number;
+    }>;
+    nativeBalance: string;
+    selectorOpen: SelectorTarget;
+    selectorSearch: string;
 }
 export type Listener = (state: WidgetState) => void;
 export declare function createInitialState(inputMint: string, outputMint: string): WidgetState;
