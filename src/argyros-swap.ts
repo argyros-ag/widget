@@ -80,7 +80,7 @@ export class ArgyrosSwapElement extends HTMLElement {
 
   private async loadTokenList(): Promise<void> {
     try {
-      const baseUrl = this.getAttribute("base-url") || "https://api.argyros.trade";
+      const baseUrl = this.getAttribute("base-url") || "https://api.argyros.xyz";
       const res = await fetch(`${baseUrl}/api/v1/tokens`);
       if (!res.ok) return;
       const data = await res.json();

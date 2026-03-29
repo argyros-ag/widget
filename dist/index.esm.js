@@ -37,7 +37,7 @@ class ServerError extends ArgyrosError {
     }
 }
 
-const DEFAULT_BASE_URL = "https://api.argyros.trade";
+const DEFAULT_BASE_URL = "https://api.argyros.xyz";
 const DEFAULT_TIMEOUT = 30000;
 const DEFAULT_RETRIES = 2;
 class ArgyrosSDK {
@@ -895,7 +895,7 @@ class ArgyrosSwapElement extends HTMLElement {
     }
     async loadTokenList() {
         try {
-            const baseUrl = this.getAttribute("base-url") || "https://api.argyros.trade";
+            const baseUrl = this.getAttribute("base-url") || "https://api.argyros.xyz";
             const res = await fetch(`${baseUrl}/api/v1/tokens`);
             if (!res.ok)
                 return;
